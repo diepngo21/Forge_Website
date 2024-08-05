@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Navbar } from "./components";
+import { MainPage, Safety, New, Contact } from "./pages";
+// Services Page
+import {
+  Printer,
+  PostPrinter,
+  Laser,
+  AnkerMake,
+  Ultimaker,
+  Microscope,
+  Waste_Disposal,
+  Instron,
+} from "./pages";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MainPage />} />{" "}
+          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/safety" element={<Safety />} />
+          <Route path="/new" element={<New />} />
+          <Route path="/services/3dprinter" element={<Printer />} />
+          <Route path="/services/post_printer" element={<PostPrinter />} />
+          <Route path="/services/laser_cutter" element={<Laser />} />
+          <Route path="/services/ankermake" element={<AnkerMake />} />
+          <Route path="/services/waste_disposal" element={<Waste_Disposal />} />
+          <Route path="/services/ultimaker" element={<Ultimaker />} />
+          <Route
+            path="/services/keyence_digital_microscope"
+            element={<Microscope />}
+          />
+          <Route path="/services/instron" element={<Instron />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
