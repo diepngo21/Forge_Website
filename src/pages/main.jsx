@@ -40,21 +40,27 @@ export const Main = () => {
             community to <br></br> learn, grow, and create together.
           </p>
         </div>
-        <div className="btn_about">
+        <div className="btn_about ">
           <button
-            id="btn_contact"
-            className="btn"
+            class="frog-button"
             type="button"
             onClick={() => scrollToSection("contact_sec")}
           >
+            <span class="frog-eyes">
+              <span class="frog-eye left-eye"></span>
+              <span class="frog-eye right-eye"></span>
+            </span>
             Contact
           </button>
           <button
-            id="btn_schedule"
-            className="btn"
+            class="frog-button"
             type="button"
             onClick={() => scrollToSection("schedule_sec")}
           >
+            <span class="frog-eyes">
+              <span class="frog-eye left-eye"></span>
+              <span class="frog-eye right-eye"></span>
+            </span>
             Schedule
           </button>
         </div>
@@ -90,7 +96,7 @@ export const Main = () => {
             <p className="info">{info.school}</p>
             <p className="info">{info.address}</p>
             <p className="info">Room: {info.room}</p>
-            <div className="email" style={{ marginTop: "60px" }}>
+            <div className="email" style={{ marginTop: "50px" }}>
               <p className="info" style={{ display: "inline" }}>
                 Email:
                 <a

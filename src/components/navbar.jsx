@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../style/components/navbar.css";
-import "../style/responsive.css";
 import { Link, useNavigate } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";

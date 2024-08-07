@@ -62,3 +62,42 @@
 .indicator_inactive {
   background-color: gray;
 }
+
+/* Responsive */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container_slider {
+    width: 65%;
+  }
+
+  .arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .slide {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container_slider {
+    width: 100%;
+    margin-top: 5vh;
+  }
+
+  .arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .slide {
+    max-height: 250px;
+  }
+
+  .indicator {
+    height: 0.4rem;
+    width: 0.4rem;
+  }
+}

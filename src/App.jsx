@@ -1,5 +1,5 @@
 import { Navbar } from "./components";
-import { MainPage, Safety, New, Contact } from "./pages";
+import { MainPage, Safety, New } from "./pages";
 // Services Page
 import {
   Printer,
@@ -42,7 +42,6 @@ function App() {
             element={<Microscope />}
           />
           <Route path="/services/instron" element={<Instron />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </>

@@ -1,24 +1,28 @@
 .main {
-  background: url(main_bg.png) no-repeat;
-  background-size: contain;
-  height: 3258px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-.about {
-  margin-left: 40px;
+  background: url(../../assets/main_bg.png) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.about {
+  width: 100%;
+  max-width: 550px;
+  margin-top: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .header_about {
   color: #091133;
   font-size: 50px;
-  margin: 0 0 20px 10px;
+  margin: 0 0 20px;
 }
 .text_about {
   font-size: 18px;
@@ -33,21 +37,7 @@
   padding: 10px 45px;
   color: white;
 }
-#btn_schedule {
-  background: transparent;
-  margin-left: 100px;
-  border: 2px solid white;
-}
-#btn_schedule:hover {
-  background: #85b8bb;
-}
-#btn_contact {
-  background: #172747;
-  border: none;
-}
-#btn_contact:hover {
-  background: #323b4e;
-}
+
 .about_descr {
   font-family: Roboto Mono !important;
 }
@@ -56,11 +46,13 @@
 .contact_sec {
   font-family: allerta stencil !important;
   color: white;
+  margin-top: 40px;
 }
 .schedule_sec {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 330px;
 }
 .schedule_header,
 .contact_header {
@@ -81,6 +73,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 .contact_descr {
   display: flex;
@@ -90,4 +84,214 @@
 }
 .info {
   margin-bottom: 40px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  .main {
+    background: url(../../assets/main_bg_mobile.png) no-repeat center center;
+    background-size: cover;
+    padding-top: 70px;
+  }
+
+  .about {
+    margin: auto;
+    margin-top: 700px;
+  }
+
+  .header_about {
+    font-size: 40px;
+  }
+
+  .text_about {
+    font-size: 17px;
+  }
+
+  .btn_about {
+    margin-top: 50px;
+  }
+
+  .schedule_sec {
+    margin-top: 150px;
+  }
+
+  .schedule_header,
+  .contact_header {
+    font-size: 35px;
+  }
+
+  .hour {
+    font-size: 19px;
+  }
+
+  .contact_sec {
+    margin-top: 120px;
+  }
+
+  .contact_descr {
+    align-items: center;
+  }
+
+  .contact_info {
+    margin: 20px 0 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    background: url(../../assets/main_bg_mobile.png) no-repeat center center;
+    background-size: cover;
+    padding-top: 60px;
+  }
+
+  .about {
+    margin: 0 auto;
+    margin-top: 650px;
+    width: 90%;
+  }
+
+  .header_about {
+    font-size: 35px;
+  }
+
+  .text_about {
+    font-size: 16px;
+  }
+
+  .btn_about {
+    margin-top: 40px;
+  }
+
+  .schedule_sec {
+    margin-top: 100px;
+  }
+
+  .schedule_header,
+  .contact_header {
+    font-size: 30px;
+  }
+
+  .hour {
+    font-size: 18px;
+  }
+
+  .contact_sec {
+    margin-top: 100px;
+  }
+
+  .contact_descr {
+    align-items: center;
+  }
+
+  .contact_info {
+    margin: 20px 0 0 20px;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+  .header_about {
+    font-size: 28px;
+  }
+
+  .text_about {
+    font-size: 14px;
+  }
+
+  .btn_about {
+    margin-top: 20px;
+  }
+
+  .schedule_sec {
+    margin-top: 50px;
+  }
+
+  .schedule_header,
+  .contact_header {
+    font-size: 25px;
+  }
+
+  .hour {
+    font-size: 16px;
+  }
+
+  .contact_sec {
+    margin-top: 50px;
+  }
+  .contact_descr {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Frog Button */
+
+.frog-button {
+  background-color: #77dd77;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 20px;
+  box-shadow: 0 4px #5ca15c;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.frog-button .frog-eyes {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.frog-button .frog-eye {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #567d2d;
+  position: relative;
+}
+
+.frog-button .frog-eye:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frog-button .frog-eye.left-eye {
+  transform: rotate(-15deg);
+}
+
+.frog-button .frog-eye.right-eye {
+  transform: rotate(15deg);
+}
+
+.frog-button:hover {
+  background-color: #5ca15c;
+  transform: translateY(-3px);
+  box-shadow: 0 6px #3d703d;
+}
+
+.frog-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px #3d703d;
 }

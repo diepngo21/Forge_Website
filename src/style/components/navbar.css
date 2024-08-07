@@ -4,6 +4,10 @@
   padding: 0 24px;
   cursor: pointer;
   color: var(--text-color);
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar {
@@ -13,11 +17,13 @@
 .nav_option li {
   display: inline-block;
   margin-right: 15px;
+  position: relative;
 }
 
 .nav_menu {
   display: flex;
   list-style: none;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -67,8 +73,7 @@
 }
 
 .service:hover {
-  cursor: default;
-  text-decoration: underline;
+  cursor: pointer;
 }
 .nav_menu li:hover .nav_text,
 .subnav li:hover .subnav_text {
