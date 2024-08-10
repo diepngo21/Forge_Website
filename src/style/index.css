@@ -1,6 +1,7 @@
 :root {
   --dark-blue: #172747;
   --text-color: #929ecc;
+  --font-web: allerta stencil;
 }
 * {
   margin: 0;
