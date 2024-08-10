@@ -18,13 +18,10 @@ export const Main = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.state?.scrollToContact) {
-      const contactSection = document.getElementById("contact_sec");
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
-      }
+    if (location.state?.scrollTo) {
+      scrollToSection(location.state.scrollTo);
     }
-  }, [location]);
+  }, [location.state]);
 
   return (
     <div className="main">
@@ -83,13 +80,9 @@ export const Main = () => {
             <iframe
               width="400"
               height="320"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
               src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=37.6404075,%20-122.1062584+(Chabot%20College)&amp;t=&amp;z=21&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             >
-              <a href="https://www.gps.ie/">gps systems</a>
+              {" "}
             </iframe>
           </div>
           <div className="contact_info">

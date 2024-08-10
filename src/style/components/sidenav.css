@@ -1,0 +1,92 @@
+.sidenav_box {
+  background-color: transparent;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  width: 60px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.sidenav_box:hover {
+  width: 150px;
+}
+
+.sidenav_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.sidenav_link {
+  color: black;
+  font-size: 20px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 10px 15px;
+  transition: background-color 0.2s ease;
+  border-radius: 50px;
+  position: relative;
+}
+
+.sidenav_link:hover {
+  color: rgb(102, 98, 98);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.link_text {
+  display: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidenav_box:hover .link_text {
+  display: block;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .sidenav_box {
+    width: 50px;
+  }
+
+  .sidenav_box:hover {
+    width: 120px;
+  }
+
+  .sidenav_link {
+    font-size: 18px;
+  }
+
+  .link_text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidenav_box {
+    width: 40px;
+  }
+
+  .sidenav_box:hover {
+    width: 100px;
+  }
+
+  .sidenav_link {
+    font-size: 16px;
+  }
+
+  .link_text {
+    font-size: 12px;
+  }
+}

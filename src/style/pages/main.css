@@ -242,6 +242,7 @@
   margin-right: 20px;
   box-shadow: 0 4px #5ca15c;
   cursor: pointer;
+  font-family: Roboto Mono !important;
   position: relative;
   text-align: center;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
