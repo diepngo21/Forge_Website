@@ -38,6 +38,12 @@
   color: white;
 }
 
+.main_slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
 .about_descr {
   font-family: Roboto Mono !important;
 }
@@ -195,6 +201,24 @@
     font-size: 28px;
   }
 
+  .map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
   .text_about {
     font-size: 14px;
   }
@@ -227,6 +251,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .frog-button {
+    margin-top: 20px;
   }
 }
 

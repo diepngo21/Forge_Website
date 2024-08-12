@@ -62,7 +62,9 @@ export const Main = () => {
           </button>
         </div>
       </div>
-      <Slider />
+      <div className="main_slider">
+        <Slider />
+      </div>
       <div id="schedule_sec" className="schedule_sec">
         <div className="schedule_header">Schedule</div>
         <div className="hours">
