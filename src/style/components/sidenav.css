@@ -25,7 +25,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   position: relative;
 }
 
@@ -68,7 +67,6 @@
 
 .sidenav_sub.show {
   display: flex;
-  align-items: center;
 }
 
 .sidenav_subtext {

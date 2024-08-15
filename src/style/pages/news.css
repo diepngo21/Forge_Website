@@ -65,3 +65,64 @@ hr {
 .news_activities_sec {
   padding-bottom: 250px;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .news_header_text {
+    font-size: 4rem;
+  }
+
+  .news_img_holder {
+    height: 250px;
+  }
+
+  .news_events_header,
+  .news_activities_header {
+    margin: 40px 0;
+    font-size: 20px;
+  }
+
+  .news_activities_sec {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news_header_text {
+    font-size: 3rem;
+  }
+
+  .news_img_holder {
+    height: 200px;
+  }
+
+  .news_events_header,
+  .news_activities_header {
+    margin: 30px 0;
+    font-size: 18px;
+  }
+
+  .news_activities_sec {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news_header_text {
+    font-size: 2.5rem;
+  }
+
+  .news_img_holder {
+    height: 180px;
+  }
+
+  .news_events_header,
+  .news_activities_header {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .news_activities_sec {
+    padding-bottom: 40px;
+  }
+}

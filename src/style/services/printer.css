@@ -1,0 +1,154 @@
+.printer_header_content,
+.printer_about_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.printer_about_content {
+  display: flex;
+  align-items: center;
+}
+.printer_footer {
+  padding-bottom: 75px;
+}
+
+.printer_footer_content {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #d56161;
+  width: 80%;
+  font-size: 1.5;
+  font-style: italic;
+}
+.printer_instruction_header {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: #d56161;
+  width: 40%;
+  font-style: italic;
+}
+
+.printer_instruction_content {
+  font-weight: bold;
+  margin: 100px 0 60px 0;
+}
+
+.printer_instruction_steps {
+  margin: 20px 0;
+}
+
+.printer_instruction_steps p {
+  word-spacing: 4px;
+  line-height: 25px;
+}
+.printer_instruction_box {
+  margin: 0 150px;
+}
+
+.printer_about_box {
+  margin-top: 50px;
+}
+
+.printer_about_text {
+  text-align: center;
+  font-weight: bold;
+  margin-right: 100px;
+  color: #581d1d;
+}
+.printer_header p {
+  color: #581d1d;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  font-size: 3rem;
+}
+
+.printer_sticker {
+  height: 20vh;
+  width: 20%;
+}
+
+.printer_header {
+  background-color: #913f40;
+  width: 99%;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.printer_header_sec {
+  background-color: #b08d8b;
+}
+
+.printer_box {
+  background-color: #ffdfcc;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .printer_instruction_box {
+    margin: 0 50px;
+    padding: 15px;
+  }
+
+  .printer_instruction_header,
+  .printer_footer_content {
+    width: 100%;
+    font-size: 1.25rem;
+  }
+
+  .printer_header p {
+    font-size: 2rem;
+  }
+
+  .printer_sticker {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .printer_instruction_box {
+    margin: 0 20px;
+    padding: 10px;
+  }
+
+  .printer_instruction_header,
+  .printer_footer_content {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .printer_header p {
+    font-size: 1.5rem;
+  }
+
+  .printer_sticker {
+    width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .printer_header p {
+    font-size: 1.2rem;
+  }
+
+  .printer_sticker {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .printer_instruction_header,
+  .printer_footer_content {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .printer_about_text {
+    margin-right: 0px;
+    margin-bottom: 65px;
+  }
+  .printer_about_content {
+    flex-direction: column;
+  }
+}

@@ -10,7 +10,14 @@
 }
 html {
   scroll-behavior: smooth;
-  font-family: Roboto;
+  font-family: Roboto Mono;
+}
+
+.services_header_font {
+  font-family: "Inknut Antiqua", serif !important;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0 30px;
 }
 
 .mt-16 {
