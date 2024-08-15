@@ -8,9 +8,6 @@
   display: flex;
   align-items: center;
 }
-.printer_footer {
-  padding-bottom: 75px;
-}
 
 .printer_footer_content {
   border-radius: 10px;
@@ -21,13 +18,9 @@
   font-size: 1.5;
   font-style: italic;
 }
+
 .printer_instruction_header {
-  border-radius: 10px;
-  border: 2px solid black;
-  padding: 10px;
   background-color: #d56161;
-  width: 40%;
-  font-style: italic;
 }
 
 .printer_instruction_content {
@@ -35,14 +28,6 @@
   margin: 100px 0 60px 0;
 }
 
-.printer_instruction_steps {
-  margin: 20px 0;
-}
-
-.printer_instruction_steps p {
-  word-spacing: 4px;
-  line-height: 25px;
-}
 .printer_instruction_box {
   margin: 0 150px;
 }
@@ -54,7 +39,7 @@
 .printer_about_text {
   text-align: center;
   font-weight: bold;
-  margin-right: 100px;
+  margin-right: 20px;
   color: #581d1d;
 }
 .printer_header p {
@@ -67,6 +52,11 @@
 .printer_sticker {
   height: 20vh;
   width: 20%;
+}
+
+.services_qr {
+  width: 169px;
+  height: 161px;
 }
 
 .printer_header {
@@ -127,6 +117,9 @@
   .printer_sticker {
     width: 30%;
   }
+  .services_qr {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -136,7 +129,7 @@
 
   .printer_sticker {
     width: 100%;
-    max-width: 200px;
+    max-width: 150px;
   }
 
   .printer_instruction_header,
@@ -150,5 +143,8 @@
   }
   .printer_about_content {
     flex-direction: column;
+  }
+  .services_qr {
+    margin-right: 0px;
   }
 }

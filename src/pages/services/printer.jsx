@@ -21,16 +21,16 @@ export const Printer = () => {
             integrity of your prints. Scan the QR Code for more <br></br>{" "}
             details.
           </p>
-          <img src={printer_qr}></img>
+          <img src={printer_qr} className="services_qr"></img>
         </div>
       </div>
       <div className="printer_instruction_box">
         <div className="printer_instruction">
           <div className="printer_instruction_content">
-            <h3 className="printer_instruction_header">
+            <h3 className="printer_instruction_header services_instruction_header">
               For Printing with SD Card or USB:
             </h3>
-            <div className="printer_instruction_steps">
+            <div className="services_instruction_steps">
               <p>
                 1. Prepare Model: Design or download a 3D model in a compatible
                 format (like .STL or .OBJ).
@@ -59,7 +59,7 @@ export const Printer = () => {
           </div>
         </div>
         <div className="printer_instruction_content">
-          <h3 className="printer_instruction_header">
+          <h3 className="printer_instruction_header services_instruction_header">
             For Cloud-Based Printing:
           </h3>
           <div className="printer_instruction_steps">
@@ -76,7 +76,7 @@ export const Printer = () => {
             </p>
           </div>
         </div>
-        <div className="printer_footer">
+        <div className="services_footer">
           <h3 className="printer_footer_content">
             Remember to follow safety guidelines provided by MakerBot and the
             instructions of the chosen method.

@@ -30,11 +30,11 @@ export const Main = () => {
         <div className="header_about">Welcome to the Forge!</div>
         <div className="text_about">
           <p className="about_descr">
-            Step into The Chabot Forge, a hub for craftsmanship and <br></br>
-            creativity. With state-of-the-art tools like 3D printers and a
-            <br></br>laser cutter, it's a space for all makers, from novices to
-            pros,<br></br>to collaborate and bring ideas to life. Join our
-            community to <br></br> learn, grow, and create together.
+            Step into The Chabot Forge, a hub for craftsmanship and creativity.
+            With state-of-the-art tools like 3D printers and a laser cutter,
+            it's a space for all makers, from novices to pros, to collaborate
+            and bring ideas to life. Join our community to learn, grow, and
+            create together.
           </p>
         </div>
         <div className="btn_about ">
