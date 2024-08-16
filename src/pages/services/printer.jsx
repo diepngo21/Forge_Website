@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style/services/printer.css";
-import printer_qr from "../../assets/3dprinter_qr.png";
-import printer from "../../assets/3dprinter.png";
+import printer_qr from "../../assets/pages/services/printer/3dprinter_qr.png";
+import printer from "../../assets/pages/services/printer/3dprinter.png";
 export const Printer = () => {
   return (
     <div className="printer_box">

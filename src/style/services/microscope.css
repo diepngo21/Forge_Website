@@ -1,0 +1,91 @@
+.micro_header {
+  background-color: #5c4c35;
+  display: flex;
+  justify-content: center;
+}
+.micro_box {
+  background-color: #fff9e7;
+}
+
+.micro_header_content {
+  display: flex;
+  align-items: center;
+}
+
+.micro_header_content p {
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+    2px 2px 0 white;
+  font-size: 2.5rem;
+}
+
+.microscope_header_sticker {
+  width: 224px;
+  height: 240px;
+}
+.micro_instruction_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.micro_instruction {
+  background-color: #5c4c35;
+  border-radius: 60px;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  text-align: center;
+}
+
+.micro_header_sticker {
+  width: 100px;
+  height: 81px;
+}
+
+.micro_instruction p {
+  color: white;
+  padding: 30px 0;
+}
+
+.micro_hr {
+  border: 3px solid black;
+}
+
+/* Sticker */
+.micro_sticker_left {
+  left: 305px;
+}
+
+.micro_sticker_right {
+  right: 305px;
+}
+.micro_sticker_turn {
+  transform: rotate(55deg);
+}
+
+.micro_header_sticker {
+  position: absolute;
+  margin-top: 45px;
+}
+.micro_instruction_steps {
+  display: flex;
+}
+.micro_instruction_steps p {
+  margin: 0 10px;
+}
+
+.micro_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.micro_footer_text {
+  font-weight: bold;
+  margin-bottom: 50px;
+}

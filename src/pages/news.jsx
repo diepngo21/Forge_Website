@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/pages/news.css";
-import event from "../assets/news_header.png";
+import event from "../assets/pages/news/news_header.png";
 import { Slider } from "../components";
 
 export const New = () => {
@@ -11,7 +11,7 @@ export const New = () => {
           <div className="news_header_content">
             <p className="news_header_text ">News</p>
           </div>
-          <hr></hr>
+          <hr className="news_hr"></hr>
         </div>
         <div className="news_events_sec">
           <div className="news_events_header">

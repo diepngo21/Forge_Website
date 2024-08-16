@@ -1,5 +1,5 @@
 import { SideNav } from "./components";
-import { MainPage, Safety, New, Services } from "./pages";
+import { MainPage, New, Safety } from "./pages";
 // Services Page
 import {
   Printer,
@@ -30,9 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />{" "}
         <Route path="*" element={<Navigate to="/" />} />
-        <Route path="/safety" element={<Safety />} />
         <Route path="/new" element={<New />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/safety" element={<Safety />} />
         <Route path="/services/3dprinter" element={<Printer />} />
         <Route path="/services/post_printer" element={<PostPrinter />} />
         <Route path="/services/laser_cutter" element={<Laser />} />

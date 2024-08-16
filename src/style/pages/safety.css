@@ -9,7 +9,8 @@
   margin-left: 300px;
 }
 .safety_header_sec {
-  background: url("../../assets/safety_header.png") top center / cover no-repeat;
+  background: url("../../assets/pages/safety/safety_header.png") top center /
+    cover no-repeat;
   min-height: 500px;
   position: relative;
   width: 100%;

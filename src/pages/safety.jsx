@@ -1,9 +1,9 @@
 import React from "react";
 import "../style/pages/safety.css";
-import safety1 from "../assets/safety1.png";
-import safety2 from "../assets/safety2.png";
-import safety3 from "../assets/safety3.png";
-import safety4 from "../assets/safety4.png";
+import safety1 from "../assets/pages/safety/safety1.png";
+import safety2 from "../assets/pages/safety/safety2.png";
+import safety3 from "../assets/pages/safety/safety3.png";
+import safety4 from "../assets/pages/safety/safety4.png";
 
 export const Safety = () => {
   return (

@@ -33,7 +33,7 @@ html {
 }
 
 .services_footer {
-  padding-bottom: 75px;
+  padding-bottom: 205px;
 }
 
 .services_instruction_steps p {
@@ -56,5 +56,8 @@ html {
 @media (max-width: 480px) {
   .services_instruction_steps p {
     margin-bottom: 20px;
+  }
+  .services_header_font {
+    margin: 0px;
   }
 }

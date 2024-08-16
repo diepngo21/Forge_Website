@@ -5,7 +5,9 @@
   color: white;
 }
 .news_header_sec {
-  background: url("../../assets/news_header.png") top center / cover no-repeat;
+  background: url("../../assets/pages/news/news_header.png") top center / cover
+    no-repeat;
+
   min-height: 500px;
   position: relative;
   width: 100%;
@@ -25,7 +27,7 @@
   font-size: 6rem;
 }
 
-hr {
+.news_hr {
   border: 4px solid white;
 }
 .news_events_sec,

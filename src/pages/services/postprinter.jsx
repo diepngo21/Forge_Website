@@ -1,7 +1,7 @@
 import React from "react";
-import postprinter1 from "../../assets/postprinter1.png";
-import postprinter2 from "../../assets/postprinter2.png";
-import postprinter_qr from "../../assets/postprinter_qr.png";
+import postprinter1 from "../../assets/pages/services/postprinter/postprinter1.png";
+import postprinter2 from "../../assets/pages/services/postprinter/postprinter2.png";
+import postprinter_qr from "../../assets/pages/services/postprinter/postprinter_qr.png";
 
 import "../../style/services/postprinter.css";
 import "../../style/index.css";
