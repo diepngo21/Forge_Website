@@ -1,0 +1,62 @@
+.laser_header_content {
+  background-color: #7370c0;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.laser_header_content {
+  color: #b3cef7;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.laser_img2 {
+  width: 220px;
+  height: 230px;
+}
+
+.laser_img1 {
+  width: 175px;
+  height: 150px;
+}
+
+.laser_box {
+  background-color: #aaa9ca;
+  font-weight: bold;
+}
+.laser_content {
+  margin: 100px;
+}
+.laser_hr {
+  background-color: #8581e9;
+  margin: 20px 0;
+  width: 100% !important;
+}
+
+.laser_about_content {
+  text-align: center;
+}
+.laser_about_content p {
+  margin-bottom: 25px;
+}
+
+.laser_instruction_header {
+  background-color: #8581e9;
+}
+
+.laser_materials {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+.laser_materials h3 {
+  margin: auto;
+  text-align: center;
+}
+
+.laser_materials p {
+  margin: 20px 40px;
+  font-size: 1rem;
+}

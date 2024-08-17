@@ -1,0 +1,152 @@
+.ultimaker_header_content {
+  display: flex;
+  border: 3px solid black;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+.ultimaker_header_content p {
+  color: #2097f6;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.ultimaker_box {
+  background-color: #6cc7e6;
+}
+
+.ultimaker_about_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  text-align: center;
+}
+.ultimaker_about_content p {
+  width: 50%;
+  color: #2152b4;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.ultimaker_instruction_header {
+  background-color: #006cc2;
+  color: white;
+  width: 20%;
+}
+.ultimaker_instruction_content {
+  margin: 100px 100px 0 100px;
+}
+
+.ultimaker_instruction_text p {
+  margin-bottom: 20px;
+}
+.ultimaker_header_content img {
+  width: 10%;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1440px) {
+  .ultimaker_about_content {
+    margin: 60px;
+  }
+
+  .ultimaker_instruction_content {
+    margin: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ultimaker_header_content img {
+    width: 20%;
+  }
+  .ultimaker_header_content p {
+    font-size: 2rem;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+
+  .ultimaker_about_content p {
+    width: 70%;
+  }
+
+  .ultimaker_instruction_content {
+    margin: 30px;
+  }
+
+  .ultimaker_instruction_header {
+    width: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  .ultimaker_header_content p {
+    font-size: 1.2rem;
+  }
+  .ultimaker_header_content {
+    padding: 10px;
+  }
+
+  .ultimaker_about_content {
+    margin: 20px;
+  }
+
+  .ultimaker_about_content p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .ultimaker_instruction_content {
+    margin: 20px;
+  }
+
+  .ultimaker_instruction_header {
+    width: 80%;
+  }
+
+  .ultimaker_instruction_text p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .ultimaker_header_content {
+    padding: 5px;
+  }
+  .ultimaker_header_content p {
+    font-size: 2rem;
+    margin-left: 5px;
+  }
+
+  .ultimaker_about_content {
+    margin: 15px;
+  }
+
+  .ultimaker_instruction_content {
+    margin: 15px;
+  }
+
+  .ultimaker_instruction_header {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .ultimaker_instruction_text p {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .ultimaker_header_content {
+    padding: 5px;
+  }
+  .ultimaker_header_content p {
+    font-size: 1.4rem;
+  }
+  .ultimaker_header_content img {
+    width: 25%;
+  }
+}

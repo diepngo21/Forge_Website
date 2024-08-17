@@ -1,0 +1,110 @@
+.instron_header {
+  border: 3px solid black;
+  background-color: #d83333;
+}
+
+.instron_header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.instron_header_content p {
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 250px;
+}
+
+.instron_header_content img {
+  margin-left: -67px;
+  margin-top: 50px;
+}
+
+.instron_instruction_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.instron_test_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.instron_test_description h3 {
+  margin-bottom: 25px;
+}
+
+.instron_img {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.instron_description_header {
+  background-color: #fc554a;
+}
+.instron_box {
+  background-color: #e4827c;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .instron_instruction_content {
+    margin: 50px;
+  }
+
+  .instron_test_description p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .instron_instruction_content {
+    margin: 40px;
+  }
+  .instron_img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .instron_header_content p {
+    font-size: 3rem;
+    margin-left: -20px;
+  }
+  .instron_header_content img {
+    width: 160px;
+    height: 108px;
+    margin-left: -45px;
+  }
+  .instron_instruction_content {
+    margin: 30px;
+  }
+
+  .instron_test_description h3 {
+    font-size: 18px;
+  }
+
+  .instron_test_description p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .instron_header_content p {
+    font-size: 2.5rem;
+  }
+
+  .instron_test_description p {
+    font-size: 12px;
+  }
+  .instron_description_header {
+    width: 70%;
+  }
+}

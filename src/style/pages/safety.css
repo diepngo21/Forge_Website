@@ -5,8 +5,8 @@
 .safety_header_content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 300px;
+  justify-content: space-between;
+  margin-left: 420px;
 }
 .safety_header_sec {
   background: url("../../assets/pages/safety/safety_header.png") top center /
@@ -22,7 +22,7 @@
 .safety_header_text {
   color: white;
   font-family: var(--font-web);
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 .hr_safety_header {
@@ -36,7 +36,6 @@
 }
 
 .safety_sticker {
-  margin-left: 50px;
   width: 150px;
   height: 150px;
 }
@@ -157,6 +156,9 @@
 }
 
 @media (max-width: 768px) {
+  .safety_header_content {
+    margin-left: 150px;
+  }
   .safety_header_text {
     font-size: 3rem;
   }
@@ -219,6 +221,6 @@
     font-size: 2.5rem;
   }
   .safety_sticker {
-    margin: 0px;
+    margin: 0px 0px 0 34px;
   }
 }

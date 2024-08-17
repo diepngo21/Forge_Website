@@ -1,0 +1,139 @@
+.anker_header {
+  background-color: #d8f4ce;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.anker_header_content {
+  display: flex;
+  align-items: center;
+}
+.anker_box {
+  background-color: #abedc1;
+}
+
+.anker_about_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  text-align: center;
+}
+.anker_about_content p {
+  width: 60%;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.anker_instruction_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.anker_instruction_header {
+  background-color: #000000;
+  width: 20%;
+  color: white;
+}
+
+.anker_instruction_content {
+  display: flex;
+  margin: 100px 100px 0 100px;
+}
+.anker_instruction_content p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.anker_instruction_text {
+  display: flex;
+  flex-direction: row;
+}
+.anker_header_content p {
+  color: #26497d;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+  margin-right: 20px;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .anker_header_content {
+    flex-direction: column;
+  }
+  .anker_header_content p {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+
+  .anker_about_content {
+    margin: 100px;
+    text-align: center;
+  }
+
+  .anker_about_content p {
+    width: 80%;
+    margin-right: 25px;
+  }
+
+  .anker_instruction_content {
+    margin: 30px;
+  }
+
+  .anker_instruction_text {
+    align-items: center;
+  }
+
+  .anker_instruction_text p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .anker_instruction_header {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  .anker_sticker {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .anker_header_content p {
+    font-size: 1.5rem;
+  }
+  .anker_header_content img {
+    height: 120px;
+    width: 180px;
+  }
+  .anker_about_content {
+    margin: 20px;
+  }
+
+  .anker_about_content p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .anker_instruction_text p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .anker_instruction_header {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .anker_instruction_text {
+    flex-direction: column;
+  }
+  .anker_sticker {
+    margin-top: 50px;
+  }
+}
