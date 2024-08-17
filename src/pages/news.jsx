@@ -1,6 +1,8 @@
 import React from "react";
 import "../style/pages/news.css";
-import event from "../assets/pages/news/news_header.png";
+import news_nothing from "../assets/pages/news/news_nothing.png";
+import news_img from "../assets/pages/news/news_header.png";
+
 import { Slider } from "../components";
 
 export const New = () => {
@@ -18,7 +20,11 @@ export const New = () => {
             <p>Events happening soon...</p>
           </div>
           <div className="news_img_holder">
-            <img src={event} className="news_img"></img>
+            <img
+              src={news_nothing}
+              alt="Event Image"
+              className="news_img"
+            ></img>
           </div>
         </div>
         <div className="news_activities_sec">

@@ -27,9 +27,24 @@
   align-items: center;
   position: relative;
 }
+.sidenav_box .sidenav_link {
+  color: white;
+}
+
+.sidenav_box .sidenav_link .icon {
+  color: white;
+}
+
+.sidenav_box.active_sidenav .sidenav_link {
+  color: black;
+}
+
+.sidenav_box.active_sidenav .sidenav_link .icon {
+  color: black;
+}
 
 .sidenav_link {
-  color: white;
+  color: black;
   font-size: 20px;
   display: flex;
   text-decoration: none;
@@ -41,7 +56,6 @@
 }
 
 .sidenav_link:hover {
-  color: rgb(102, 98, 98);
   background-color: rgba(0, 0, 0, 0.1);
 }
 

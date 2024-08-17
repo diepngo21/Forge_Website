@@ -5,7 +5,7 @@ import { info } from "../data";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { Slider } from "../components/slider";
+import { Slider } from "../components";
 
 export const Main = () => {
   const scrollToSection = (sectionId) => {
@@ -63,7 +63,7 @@ export const Main = () => {
         </div>
       </div>
       <div className="main_slider">
-        <Slider />
+        <Slider></Slider>
       </div>
       <div id="schedule_sec" className="schedule_sec">
         <div className="schedule_header">Schedule</div>

@@ -62,7 +62,7 @@ export const Printer = () => {
           <h3 className="printer_instruction_header services_instruction_header">
             For Cloud-Based Printing:
           </h3>
-          <div className="printer_instruction_steps">
+          <div className=" services_instruction_steps">
             <p>1. Design or get a 3D model in a compatible format.</p>
             <p>
               2. Use MakerBot's cloud software to upload and prepare the model.

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FaHome, FaTools, FaNewspaper } from "react-icons/fa";
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { RiContactsFill } from "react-icons/ri";
@@ -11,6 +11,7 @@ import "../style/components/sidenav.css";
 export const SideNav = () => {
   const [isSubnavVisible, setIsSubnavVisible] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const sidenavRef = useRef(null);
 
   const handleScroll = (sectionId) => (event) => {
@@ -38,18 +39,39 @@ export const SideNav = () => {
     };
   }, []);
 
+  const isActivePage =
+    location.pathname === "*" || location.pathname.startsWith("/service");
+
   return (
-    <div className="sidenav_box" ref={sidenavRef}>
+    <div
+      className={`sidenav_box ${isActivePage ? "active_sidenav" : ""}`}
+      ref={sidenavRef}
+    >
       <div className="sidenav_content">
-        <Link to="/" className="sidenav_link">
+        <Link
+          to="/"
+          className={`sidenav_link ${
+            location.pathname === "/" ? "active" : ""
+          }`}
+        >
           <FaHome className="icon" />
           <span className="link_text">Home</span>
         </Link>
-        <Link to="/safety" className="sidenav_link">
+        <Link
+          to="/safety"
+          className={`sidenav_link ${
+            location.pathname === "/safety" ? "active" : ""
+          }`}
+        >
           <AiFillSafetyCertificate className="icon" />
           <span className="link_text">Safety</span>
         </Link>
-        <div className="sidenav_link sidenav_service" onClick={toggleSubnav}>
+        <div
+          className={`sidenav_link sidenav_service ${
+            location.pathname.startsWith("/services") ? "active" : ""
+          }`}
+          onClick={toggleSubnav}
+        >
           <FaTools className="icon" />
           <span className="link_text">Services</span>
           <IoMdArrowDropdown className="sidenav_dropdown" />
@@ -83,7 +105,12 @@ export const SideNav = () => {
             <span className="sidenav_subtext">Waste Disposal</span>
           </Link>
         </div>
-        <Link to="/new" className="sidenav_link">
+        <Link
+          to="/new"
+          className={`sidenav_link ${
+            location.pathname === "/new" ? "active" : ""
+          }`}
+        >
           <FaNewspaper className="icon" />
           <span className="link_text">News</span>
         </Link>
