@@ -54,6 +54,7 @@
 .laser_materials h3 {
   margin: auto;
   text-align: center;
+  width: 100%;
 }
 
 .laser_materials p {
@@ -106,5 +107,47 @@
   .laser_instruction_header {
     padding: 5px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .laser_header_content {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .laser_img2 {
+    width: 100px;
+    height: 100px;
+  }
+  .laser_header_content h3 {
+    font-size: 1.5rem;
+  }
+
+  .laser_img1 {
+    width: 120px;
+    height: 100px;
+  }
+
+  .laser_box {
+    font-size: 0.9rem;
+  }
+
+  .laser_content {
+    margin: 50px 20px;
+  }
+
+  .laser_materials p {
+    margin: 15px 20px;
+    font-size: 0.9rem;
+  }
+
+  .laser_about_content p {
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .laser_instruction_header {
+    font-size: 1.2rem;
   }
 }

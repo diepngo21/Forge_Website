@@ -162,7 +162,11 @@
 
 @media (max-width: 320px) {
   .micro_header_content p {
-    margin-left: 50px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .microscope_header_sticker {
+    display: none;
   }
   .micro_footer_text {
     margin-left: 50px;

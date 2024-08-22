@@ -99,11 +99,14 @@
 }
 
 @media (max-width: 375px) {
+  .disposal_steps_header {
+    width: 70%;
+  }
   .disposal_header_content p {
     font-size: 2rem;
     margin: 0px;
   }
   .disposal_instruction_header {
-    width: 60%;
+    width: 80%;
   }
 }

@@ -89,6 +89,7 @@
 
   .instron_test_description h3 {
     font-size: 18px;
+    width: 70%;
   }
 
   .instron_test_description p {
@@ -105,6 +106,6 @@
     font-size: 12px;
   }
   .instron_description_header {
-    width: 70%;
+    width: 100% !important;
   }
 }

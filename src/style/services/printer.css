@@ -135,7 +135,7 @@
 
   .printer_instruction_header,
   .printer_footer_content {
-    width: 100%;
+    width: 100% !important;
     font-size: 0.9rem;
   }
   .printer_about_text {

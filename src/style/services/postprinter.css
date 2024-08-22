@@ -156,4 +156,7 @@
     height: 20%;
     width: 20%;
   }
+  .postprinter_instruction_header {
+    width: 100% !important;
+  }
 }
