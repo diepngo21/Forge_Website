@@ -147,8 +147,7 @@
 
 @media (max-width: 768px) {
   .main {
-    background: url(../../assets/pages/main/main_bg_mobile.png) no-repeat center
-      center;
+    background: url(../../assets/pages/main/main_bg_mobile.png) no-repeat center;
     background-size: cover;
     padding-top: 60px;
   }
@@ -199,6 +198,8 @@
 
 /* Extra Small Mobile Styles */
 @media (max-width: 480px) {
+  .main {
+  }
   .header_about {
     font-size: 28px;
   }
