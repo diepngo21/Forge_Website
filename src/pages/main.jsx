@@ -4,6 +4,12 @@ import { hours } from "../data";
 import { info } from "../data";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import logo from "../assets/pages/main/logo.png";
+import { FaDiscord } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa";
+import { SiNotion } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 import { Slider } from "../components";
 
@@ -25,54 +31,61 @@ export const Main = () => {
 
   return (
     <div className="main">
+      <div className="logo_home">
+        <img className="logo_img" src={logo}></img>
+      </div>
       {/* About Section */}
       <div className="about">
-        <div className="header_about">Welcome to the Forge!</div>
-        <div className="text_about">
-          <p className="about_descr">
-            Step into The Chabot Forge, a hub for craftsmanship and creativity.
-            With state-of-the-art tools like 3D printers and a laser cutter,
-            it's a space for all makers, from novices to pros, to collaborate
-            and bring ideas to life. Join our community to learn, grow, and
-            create together.
-          </p>
-        </div>
-        <div className="btn_about ">
-          <button
-            class="frog-button"
-            type="button"
-            onClick={() => scrollToSection("contact_sec")}
-          >
-            <span class="frog-eyes">
-              <span class="frog-eye left-eye"></span>
-              <span class="frog-eye right-eye"></span>
-            </span>
-            Contact
-          </button>
-          <button
-            class="frog-button"
-            type="button"
-            onClick={() => scrollToSection("schedule_sec")}
-          >
-            <span class="frog-eyes">
-              <span class="frog-eye left-eye"></span>
-              <span class="frog-eye right-eye"></span>
-            </span>
-            Schedule
-          </button>
+        <div className="content_about">
+          <div className="header_about">Welcome to the Forge!</div>
+          <div className="text_about">
+            <p className="descr_about">
+              Step into The Chabot Forge, a hub for craftsmanship and
+              creativity. With state-of-the-art tools like 3D printers and a
+              laser cutter, it's a space for all makers, from novices to pros,
+              to collaborate and bring ideas to life. Join our community to
+              learn, grow, and create together.
+            </p>
+          </div>
+          <div className="btn_about ">
+            <button
+              className="frog-button"
+              type="button"
+              onClick={() => scrollToSection("contact_sec")}
+            >
+              <span class="frog-eyes">
+                <span class="frog-eye left-eye"></span>
+                <span class="frog-eye right-eye"></span>
+              </span>
+              Contact
+            </button>
+            <button
+              className="frog-button"
+              type="button"
+              onClick={() => scrollToSection("schedule_sec")}
+            >
+              <span class="frog-eyes">
+                <span class="frog-eye left-eye"></span>
+                <span class="frog-eye right-eye"></span>
+              </span>
+              Schedule
+            </button>
+          </div>
         </div>
       </div>
       <div className="main_slider">
         <Slider></Slider>
       </div>
       <div id="schedule_sec" className="schedule_sec">
-        <div className="schedule_header">Schedule</div>
-        <div className="hours">
-          <div className="hour closed">Monday: {hours.mon}</div>
-          <div className="hour closed">Tuesday: {hours.tue}</div>
-          <div className="hour open">Wednesday: {hours.wed}</div>
-          <div className="hour closed">Thursday: {hours.thu}</div>
-          <div className="hour closed">Friday: {hours.fri}</div>
+        <div className="schedule_content">
+          <p className="schedule_header">Schedule</p>
+          <div className="hours">
+            <div className="hour closed">Monday: {hours.mon}</div>
+            <div className="hour closed">Tuesday: {hours.tue}</div>
+            <div className="hour open">Wednesday: {hours.wed}</div>
+            <div className="hour closed">Thursday: {hours.thu}</div>
+            <div className="hour closed">Friday: {hours.fri}</div>
+          </div>
         </div>
       </div>
       <div id="contact_sec" className="contact_sec">
@@ -104,6 +117,38 @@ export const Main = () => {
                   </span>
                 </a>
               </p>
+            </div>
+            <div className="icon_list">
+              <Link
+                target="_blank"
+                className="icon_info"
+                to={
+                  "https://www.notion.so/introtoengineering/Chabot-Lab-Tech-Phys-Astro-Geol-Engr-03efad4034314e35919771e3bac69707"
+                }
+              >
+                <SiNotion />
+              </Link>
+              <Link
+                target="_blank"
+                className="icon_info"
+                to={"https://www.tiktok.com/@chabotforge"}
+              >
+                <FaTiktok />
+              </Link>
+              <Link
+                target="_blank"
+                className="icon_info"
+                to={"https://www.instagram.com/chabotforge/"}
+              >
+                <AiFillInstagram />
+              </Link>
+              <Link
+                target="_blank"
+                className="icon_info"
+                to={"https://discord.gg/qXgpDbY6Fc"}
+              >
+                <FaDiscord />
+              </Link>
             </div>
           </div>
         </div>
