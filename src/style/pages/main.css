@@ -6,6 +6,8 @@
 }
 .logo_home {
   background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
 }
 .logo_img {
   height: 55vh;
@@ -13,20 +15,23 @@
 }
 
 .about {
-  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background: url(../../assets//pages/main/main_bg1.png) no-repeat;
-  background-size: contain;
+  align-items: center;
 }
 
 .content_about {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  margin-left: 30px;
+  width: 70%;
+  background-color: #56a3a8;
+  border-radius: 10rem;
+  align-items: center;
+}
+.content_about div {
+  margin: 30px 150px;
 }
 
 .header_about {
@@ -40,9 +45,7 @@
   line-height: 1.2;
   color: #505f98;
 }
-.btn_about {
-  margin-top: 80px;
-}
+
 .btn {
   padding: 10px 45px;
   color: white;
@@ -131,11 +134,10 @@
 @media (min-width: 2560px) {
   .logo_img {
     height: 50vh;
-    width: 100%;
-    margin: 60px;
+    width: 70%;
   }
   .about {
-    height: 100vh;
+    height: 50vh;
   }
   .text_about {
     font-size: 2.5rem;
@@ -187,7 +189,7 @@
   }
 
   .btn_about {
-    margin-top: 50px;
+    display: flex;
   }
 
   .schedule_sec {
@@ -231,7 +233,9 @@
   .frog-button {
     margin-bottom: 30px;
   }
-
+  .content_about {
+    width: 97%;
+  }
   .schedule_sec {
     margin-top: 100px;
   }
@@ -264,7 +268,6 @@
 /* Extra Small Mobile Styles */
 @media (max-width: 480px) {
   .logo_img {
-    height: 35vh;
     width: 100%;
     margin: 0;
   }
@@ -337,10 +340,14 @@
   }
   .content_about {
     width: 100%;
-    margin: 0;
+    padding: 50px 0;
+    border-radius: 10px;
   }
   .about {
     height: 75vh;
+  }
+  .content_about div {
+    margin: 0;
   }
 }
 
