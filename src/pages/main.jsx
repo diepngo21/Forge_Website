@@ -34,7 +34,6 @@ export const Main = () => {
       <div className="logo_home">
         <img className="logo_img" src={logo}></img>
       </div>
-      {/* About Section */}
       <div className="about">
         <div className="content_about">
           <div className="header_about">Welcome to the Forge!</div>
@@ -102,7 +101,6 @@ export const Main = () => {
           </div>
           <div className="contact_info">
             <p className="info">{info.school}</p>
-            <p className="info">Jared Gochuico</p>
 
             <p className="info">{info.address}</p>
             <p className="info">Room: {info.room}</p>
@@ -152,10 +150,12 @@ export const Main = () => {
                 <FaDiscord />
               </Link>
             </div>
-            <p>&copy; 2025 Diep Gia Lich Ngo. All rights reserved.</p>
           </div>
         </div>
       </div>
+      <p style={{ color: "white" }}>
+        &copy; 2025 Chabot Forge. All rights reserved.
+      </p>{" "}
     </div>
   );
 };
