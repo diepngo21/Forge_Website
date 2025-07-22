@@ -102,6 +102,8 @@ export const Main = () => {
           </div>
           <div className="contact_info">
             <p className="info">{info.school}</p>
+            <p className="info">Jared Gochuico</p>
+
             <p className="info">{info.address}</p>
             <p className="info">Room: {info.room}</p>
             <div className="email" style={{ marginTop: "50px" }}>
@@ -150,6 +152,7 @@ export const Main = () => {
                 <FaDiscord />
               </Link>
             </div>
+            <p>&copy; 2025 Diep Gia Lich Ngo. All rights reserved.</p>
           </div>
         </div>
       </div>
